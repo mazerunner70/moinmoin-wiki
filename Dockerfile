@@ -4,7 +4,7 @@
 # TO_BUILD:       docker build -t moinmoin .
 # TO_RUN:         docker run -it -p 80:80 -p 443:443 --name my_wiki moinmoin
 
-FROM debian:jessie
+FROM armhf/debian
 MAINTAINER Olav Grønås Gjerde <olav@backupbay.com>
 
 # Set the version you want of MoinMoin
