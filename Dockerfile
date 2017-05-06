@@ -1,14 +1,14 @@
 # VERSION 0.5
-# AUTHOR:         Olav Grønås Gjerde <olav@backupbay.com>
-# DESCRIPTION:    Image with MoinMoin wiki, uwsgi, nginx and self signed SSL
+# AUTHOR:         Wils O'Hara (forked from Olav Grønås Gjerde <olav@backupbay.com>)
+# DESCRIPTION:    Image with MoinMoin wiki, uwsgi, nginx and self signed SSL aimed at Raspberry PI
 # TO_BUILD:       docker build -t moinmoin .
 # TO_RUN:         docker run -it -p 80:80 -p 443:443 --name my_wiki moinmoin
 
 FROM armhf/debian
-MAINTAINER Olav Grønås Gjerde <olav@backupbay.com>
+MAINTAINER Wils O'Hara
 
 # Set the version you want of MoinMoin
-ENV MM_VERSION 1.9.8
+ENV MM_VERSION 1.9.9
 ENV MM_CSUM 4a616d12a03f51787ac996392f9279d0398bfb3b
 
 # Install software
