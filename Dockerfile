@@ -4,7 +4,7 @@
 # TO_BUILD:       docker build -t moinmoin .
 # TO_RUN:         docker run -it -p 80:80 -p 443:443 --name my_wiki moinmoin
 
-FROM armhf/debian
+FROM armhf/ubuntu
 MAINTAINER Wils O'Hara
 
 # Set the version you want of MoinMoin
@@ -13,8 +13,7 @@ ENV MM_CSUM 4a616d12a03f51787ac996392f9279d0398bfb3b
 
 
 # Install software
-RUN apt-get update
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y \
   python \
   curl \
   openssl \
