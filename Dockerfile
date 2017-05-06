@@ -11,8 +11,9 @@ MAINTAINER Wils O'Hara
 ENV MM_VERSION 1.9.9
 ENV MM_CSUM 4a616d12a03f51787ac996392f9279d0398bfb3b
 
+
 # Install software
-#RUN apt-get update
+RUN apt-get update
 RUN apt-get install -y \
   python \
   curl \
