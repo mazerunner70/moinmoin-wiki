@@ -9,7 +9,7 @@ MAINTAINER Wils O'Hara
 
 # Set the version you want of MoinMoin
 ENV MM_VERSION 1.9.9
-ENV MM_CSUM 4397d7760b7ae324d7914ffeb1a9eeb15e09933b61468072acd3c3870351efa4
+ENV MM_CSUM d2578fb80acbe06250afc666400c4fd7bbcbd248239623e33c461a48354fa43b
 
 
 # Install software
